@@ -1,8 +1,149 @@
 {
   "layerTree": [
-    "e220d708-c851-4f54-b9ae-9c56c5e04480"
+    "fcd33c39-a032-4445-98b6-b7bc6f7b384d",
+    "e220d708-c851-4f54-b9ae-9c56c5e04480",
+    "6a6e557b-288d-4e89-9d34-3e5c772a04bb",
+    "b222a9b4-f391-4372-b7f3-4ab42a825c62"
   ],
   "layers": {
+    "6a6e557b-288d-4e89-9d34-3e5c772a04bb": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "SEEC and NSIDC",
+      "parameters": {
+        "color": {
+          "fill-color": "#33cc52",
+          "stroke-color": "#33cc45",
+          "stroke-line-cap": "round",
+          "stroke-line-join": "round",
+          "stroke-width": 1.25
+        },
+        "opacity": 1.0,
+        "source": "68b8ae44-5045-4bf3-8545-94d8bf285f36",
+        "symbologyState": {
+          "renderType": "Single Symbol"
+        },
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "b222a9b4-f391-4372-b7f3-4ab42a825c62": {
+      "filters": {
+        "appliedFilters": [],
+        "logicalOp": "all"
+      },
+      "name": "US Cities",
+      "parameters": {
+        "blur": 15.0,
+        "color": {
+          "0": "#ff0000",
+          "1": "#ff2000",
+          "2": "#ff4000",
+          "3": "#ff6000",
+          "4": "#ff8000",
+          "5": "#ff9f00",
+          "6": "#ffbf00",
+          "7": "#ffdf00",
+          "8": "#ffff00",
+          "circle-fill-color": [
+            "interpolate",
+            [
+              "linear"
+            ],
+            [
+              "get",
+              "POP_2010"
+            ],
+            11695.666666666666,
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            13936.888888888889,
+            [
+              115.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            16825.333333333332,
+            [
+              230.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            20497.999999999996,
+            [
+              238.0,
+              70.0,
+              0.0,
+              1.0
+            ],
+            25874.111111111113,
+            [
+              247.0,
+              140.0,
+              0.0,
+              1.0
+            ],
+            33848.0,
+            [
+              255.0,
+              210.0,
+              0.0,
+              1.0
+            ],
+            48947.0,
+            [
+              255.0,
+              225.0,
+              85.0,
+              1.0
+            ],
+            81561.88888888888,
+            [
+              255.0,
+              240.0,
+              170.0,
+              1.0
+            ],
+            8175133.0,
+            [
+              255.0,
+              255.0,
+              255.0,
+              1.0
+            ]
+          ]
+        },
+        "opacity": 1.0,
+        "radius": 8.0,
+        "source": "46028324-0e9a-462b-938c-6539c22ad1f7",
+        "symbologyState": {
+          "colorRamp": "hot",
+          "method": "color",
+          "mode": "quantile",
+          "nClasses": "9",
+          "renderType": "Graduated",
+          "value": "POP_2010"
+        },
+        "type": "circle"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
     "e220d708-c851-4f54-b9ae-9c56c5e04480": {
       "name": "Basemap",
       "parameters": {
@@ -10,25 +151,100 @@
       },
       "type": "RasterLayer",
       "visible": true
+    },
+    "fcd33c39-a032-4445-98b6-b7bc6f7b384d": {
+      "name": "USGS.USTopo Layer",
+      "parameters": {
+        "source": "6ba53384-e879-4a32-8ebe-13c443b2c275"
+      },
+      "type": "RasterLayer",
+      "visible": false
     }
   },
   "metadata": {},
   "options": {
     "bearing": 0.0,
     "extent": [
-      -16943218.227214247,
-      1813884.940591243,
-      -5539788.477108987,
-      8661878.212775469
+      -7947910.751384348,
+      5406805.237004612,
+      -7649560.810027454,
+      5579979.106073741
     ],
-    "latitude": 42.51130981651042,
-    "longitude": -100.98414277727615,
+    "latitude": 44.18033621077035,
+    "longitude": -70.057235486179,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 4.3991367692285905
+    "zoom": 9.164950840306336
   },
   "schemaVersion": "0.5.0",
   "sources": {
+    "46028324-0e9a-462b-938c-6539c22ad1f7": {
+      "name": "US Cities Source",
+      "parameters": {
+        "path": "us_cities.geojson"
+      },
+      "type": "GeoJSONSource"
+    },
+    "68b8ae44-5045-4bf3-8545-94d8bf285f36": {
+      "name": "SEEC and NSIDC Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.24206599999948,
+                  40.01007767367196
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "4001 Discovery Dr., Boulder, CO",
+                "Name": "Sustainability, Energy, and Environment Community (SEEC) Building"
+              },
+              "type": "Feature"
+            },
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  -105.25271574468819,
+                  40.01262175838934
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "Address": "National Snow and Ice Data Center CIRES, 449 UCB University of Colorado Boulder",
+                "Name": "National Snow and Ice Data Center (NSIDC)"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "6ba53384-e879-4a32-8ebe-13c443b2c275": {
+      "name": "USGS.USTopo",
+      "parameters": {
+        "attribution": "Tiles courtesy of the U.S. Geological Survey",
+        "maxZoom": 20.0,
+        "minZoom": 0.0,
+        "provider": "USGS",
+        "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/{z}/{y}/{x}",
+        "urlParameters": {}
+      },
+      "type": "RasterSource"
+    },
     "8c8bb2c9-59a5-4962-9835-bd4eada4a4ce": {
       "name": "Esri.WorldGrayCanvas",
       "parameters": {
