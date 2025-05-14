@@ -27,14 +27,14 @@
           "stroke-width": 1.25
         },
         "opacity": 1.0,
-        "source": "68b8ae44-5045-4bf3-8545-94d8bf285f36",
+        "source": "46028324-0e9a-462b-938c-6539c22ad1f7",
         "symbologyState": {
           "renderType": "Single Symbol"
         },
-        "type": "line"
+        "type": "circle"
       },
       "type": "VectorLayer",
-      "visible": true
+      "visible": false
     },
     "b222a9b4-f391-4372-b7f3-4ab42a825c62": {
       "filters": {
@@ -61,69 +61,69 @@
             ],
             [
               "get",
-              "POP_2010"
+              "ELEV_IN_FT"
             ],
-            11695.666666666666,
+            440.0,
             [
-              0.0,
-              0.0,
-              0.0,
+              51.0,
+              20.0,
+              24.0,
               1.0
             ],
-            13936.888888888889,
+            909.0,
             [
-              115.0,
-              0.0,
-              0.0,
+              90.0,
+              32.0,
+              35.0,
               1.0
             ],
-            16825.333333333332,
+            1427.0,
             [
-              230.0,
-              0.0,
-              0.0,
+              129.0,
+              44.0,
+              34.0,
               1.0
             ],
-            20497.999999999996,
+            2129.0,
             [
-              238.0,
-              70.0,
-              0.0,
+              159.0,
+              68.0,
+              25.0,
               1.0
             ],
-            25874.111111111113,
+            2999.0,
             [
-              247.0,
-              140.0,
-              0.0,
+              182.0,
+              99.0,
+              19.0,
               1.0
             ],
-            33848.0,
+            3937.0,
             [
-              255.0,
+              199.0,
+              134.0,
+              22.0,
+              1.0
+            ],
+            4882.0,
+            [
+              212.0,
+              171.0,
+              35.0,
+              1.0
+            ],
+            5935.0,
+            [
+              221.0,
               210.0,
-              0.0,
+              54.0,
               1.0
             ],
-            48947.0,
+            7369.0,
             [
-              255.0,
               225.0,
-              85.0,
-              1.0
-            ],
-            81561.88888888888,
-            [
-              255.0,
-              240.0,
-              170.0,
-              1.0
-            ],
-            8175133.0,
-            [
-              255.0,
-              255.0,
-              255.0,
+              253.0,
+              75.0,
               1.0
             ]
           ]
@@ -132,12 +132,12 @@
         "radius": 8.0,
         "source": "46028324-0e9a-462b-938c-6539c22ad1f7",
         "symbologyState": {
-          "colorRamp": "hot",
+          "colorRamp": "par",
           "method": "color",
-          "mode": "quantile",
+          "mode": "jenks",
           "nClasses": "9",
           "renderType": "Graduated",
-          "value": "POP_2010"
+          "value": "ELEV_IN_FT"
         },
         "type": "circle"
       },
@@ -161,20 +161,22 @@
       "visible": false
     }
   },
-  "metadata": {},
+  "metadata": {
+    "annotation_c38d8af2-adeb-4441-9f15-9a95b0936b61": "{\"position\":{\"x\":-10977148.781301554,\"y\":4503978.387145065},\"zoom\":5.037287109640793,\"label\":\"New annotation\",\"contents\":[{\"value\":\"Easy way to add annotations\",\"user\":{\"username\":\"ale37911\",\"name\":\"ale37911\",\"display_name\":\"ale37911\",\"initials\":\"a\",\"avatar_url\":null,\"color\":\"var(--jp-collaborator-color4)\"}},{\"value\":\"Hello World?\",\"user\":{\"username\":\"ale37911\",\"name\":\"ale37911\",\"display_name\":\"ale37911\",\"initials\":\"a\",\"avatar_url\":null,\"color\":\"var(--jp-collaborator-color4)\"}}],\"parent\":\"\",\"open\":false}"
+  },
   "options": {
     "bearing": 0.0,
     "extent": [
-      -7947910.751384348,
-      5406805.237004612,
-      -7649560.810027454,
-      5579979.106073741
+      -11761350.154398654,
+      4819823.709693116,
+      -11608694.401666034,
+      4934950.079034225
     ],
-    "latitude": 44.18033621077035,
-    "longitude": -70.057235486179,
+    "latitude": 40.078710626719044,
+    "longitude": -104.96834107633562,
     "pitch": 0.0,
     "projection": "EPSG:3857",
-    "zoom": 9.164950840306336
+    "zoom": 9.753953776307462
   },
   "schemaVersion": "0.5.0",
   "sources": {
