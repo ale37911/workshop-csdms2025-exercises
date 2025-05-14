@@ -2,7 +2,7 @@
 version: 1
 
 project:
-  title: "GeoJupyter Workshop - CSDMS 2025 - ale37911
+  title: "GeoJupyter Workshop - CSDMS 2025 - ale37911"
   description: "My exercises from the GeoJupyter workshop at the CSDMS 2025 Annual Meeting"
   github: "ale37911/workshop-csdms2025-exercises"
   license: "MIT"
